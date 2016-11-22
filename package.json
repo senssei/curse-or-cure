@@ -1,0 +1,19 @@
+{
+  "name": "cure-or-curse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "start": "node lib/index.js",
+    "build": "tsc",
+    "pre:build": "rimraf lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafał Warzycha <rafal.warzycha@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^2.5.4",
+    "typescript": "^2.0.10"
+  }
+}
