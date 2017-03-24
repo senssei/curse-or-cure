@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senssei/curse-or-cure.git"
+  },
+  "private": true,
   "typings": "lib/index.d.ts",
   "scripts": {
     "start": "node lib/index.js",
@@ -13,7 +18,11 @@
   "author": "Rafał Warzycha <rafal.warzycha@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "rimraf": "^2.5.4",
-    "typescript": "^2.0.10"
+    "rimraf": "^2.6.1",
+    "typescript": "^2.2.1"
+  },
+  "engines": {
+    "node": "~7.7.4",
+    "vscode": "^0.10.0"
   }
 }
