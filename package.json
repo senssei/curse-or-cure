@@ -2,7 +2,8 @@
   "name": "cure-or-curse",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/senssei/curse-or-cure.git"
