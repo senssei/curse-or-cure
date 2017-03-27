@@ -23,4 +23,4 @@ function greeter(person: Person) {
 
 var user: Person = new Student("Jane", "M.", "User");
 
-console.log(greeter(user));   
+console.log(user['_fullName']);   
