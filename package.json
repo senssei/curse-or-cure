@@ -11,6 +11,7 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "start": "node lib/index.js",
+    "lint": "tslint src/index.ts",
     "build": "tsc",
     "pre:build": "rimraf lib",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "rimraf": "^2.6.1",
+    "tslint": "^4.5.1",
     "typescript": "^2.2.1"
   },
   "engines": {
