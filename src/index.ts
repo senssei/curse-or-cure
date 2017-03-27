@@ -1,26 +1,11 @@
-interface Person {
-    firstName: string;
-    lastName: string;
-}
-
-class Student implements Person {
-
-    private _fullName: string;
-
-    get fullName(): string {
-        return this._fullName;
+function foo(num: number) {
+    if (num > 10) {
+      return 'cool';
     }
+} 
 
-    constructor(public firstName, public middleInitial, public lastName) {
-        this._fullName = firstName + " " + middleInitial + " " + lastName;
-    }
-}
+//console.log(foo().toString());  // ok, cool
 
+console.log(foo(11).toString()); 
 
-function greeter(person: Person) {
-    return "Hello, " + person.firstName + ' ' + person.lastName;
-}
-
-var user: Person = new Student("Jane", "M.", "User");
-
-console.log(user['_fullName']);   
+console.log(foo(1).toString());  // not cool bro, not cool ...
