@@ -1,11 +1,11 @@
-function foo(num: number) {
-    if (num > 10) {
-      return 'cool';
-    }
-} 
+import * as _ from 'lodash';
 
-//console.log(foo().toString());  // ok, cool
+var characters = [
+  { 'name': 'barney', 'age': 36, 'blocked': false },
+  { 'name': 'fred',   'age': 40, 'blocked': true }
+];
 
-console.log(foo(11).toString()); 
+// using "_.filter" callback shorthand
+let filtered = _.filter(characters, { 'age': 36 });
 
-console.log(foo(1).toString());  // not cool bro, not cool ...
+console.log(filtered);
